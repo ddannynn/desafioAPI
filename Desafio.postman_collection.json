@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "912036e1-c83c-48b9-8ffc-f477f17ab920",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/v1/movimiento",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "origen",
+							"value": "100",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/movimiento",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"movimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/movimiento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"moneda_o\" : 2,\n\t\"importe_o\":\"500\",\n\t\"moneda_d\": 1\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/movimiento",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"movimiento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/moneda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/moneda",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"moneda"
+					]
+				},
+				"description": "GET"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/moneda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\" : \"Dólar\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/moneda",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"moneda"
+					]
+				},
+				"description": "POST\n{\n\t\"nombreMoneda\" : \"Soles\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/tipocambio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/tipocambio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tipocambio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/tipocambio",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"fecha\" : \"2021-10-01\",\r\n\t\"compra\" : 4.127,\r\n\t\"venta\" : 4.134,\r\n\t\"moneda\" : {\r\n\t\t\"id\" : 2\r\n\t}\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/tipocambio",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tipocambio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/tipocambio/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/tipocambio/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tipocambio",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/tipocambio/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\" : 5,\n\t\"compra\" : 4.127,\n\t\"venta\" : 4.134\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/tipocambio/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tipocambio",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
